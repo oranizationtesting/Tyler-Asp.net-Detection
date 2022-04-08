@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.EC2" Version="3.7.20.2" />
+    <PackageReference Include="AWSSDK.IdentityManagement" Version="3.7.2.28" />
+    <PackageReference Include="AWSSDK.S3" Version="3.7.1.20" />
+    <PackageReference Include="AWSSDK.SimpleSystemsManagement" Version="3.7.4.6" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="3.0.0" />
+    <PackageReference Include="Microsoft.SqlServer.SqlManagementObjects" Version="161.46437.65" />
+    <Reference Include="Tyler.IMS.Local.Core">
+      <HintPath>Assets\Tyler.IMS.Local.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Nysa\Nysa.Data.SqlClient\Nysa.Data.SqlClient.csproj" />
+    <ProjectReference Include="..\..\Nysa\Nysa.Logics\Nysa.Logics.csproj" />
+    <ProjectReference Include="..\..\Nysa\Nysa.Text\Nysa.Text.csproj" />
+    <ProjectReference Include="..\..\Nysa\Nysa.Text.TSql\Nysa.Text.TSql.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\*.*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>  
+
+</Project>
