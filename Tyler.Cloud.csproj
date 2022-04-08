@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="Amazon.CDK" Version="1.88.0" />
+    <PackageReference Include="Amazon.CDK.AWS.DirectoryService" Version="1.88.0" />
+    <PackageReference Include="Amazon.CDK.AWS.EC2" Version="1.88.0" />
+    <PackageReference Include="Amazon.CDK.AWS.ElasticLoadBalancing" Version="1.88.0" />
+    <PackageReference Include="Amazon.CDK.AWS.IAM" Version="1.88.0" />
+    <PackageReference Include="Amazon.CDK.AWS.S3" Version="1.88.0" />
+    <PackageReference Include="Amazon.CDK.AWS.SSM" Version="1.88.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Nysa\Nysa.Logics\Nysa.Logics.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
